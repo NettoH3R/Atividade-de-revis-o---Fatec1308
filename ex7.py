@@ -1,14 +1,10 @@
-# Faça um script que leia N números.
-# Finalizar quando digitar 0.
-# No final mostrar o total de números digitados, o total de números ímpares e o total de números pares.
-
-
+#Ler 10 números inteiros e imprimir quantos são pares e quantos são ímpares.
 
 def count_even_or_odd(): 
 
     num = 0 #numeros digitados
 
-    counter_allNubers = 0    #Vai contar o total de numeros digitados
+    counter_allNubers = 1    #Vai contar o total de numeros digitados
 
     num_list = []   #Vai armazenar os numeros digitados
 
@@ -22,8 +18,8 @@ def count_even_or_odd():
 
 
     # Conforme os numeros vão sendo digitados eles serão adicionados em uma lista
-    while True:
-        num = float(input('Digite um número: '))
+    while counter_allNubers <= 10:
+        num = float(input(f'Digite o {counter_allNubers}º número: '))
         
         if num == 0:
             break
@@ -43,8 +39,7 @@ def count_even_or_odd():
 
 
 
-    print(f"O total de numeros digitado é de: {counter_allNubers} números")
-    print(f"{counter_even} desses números são pares")
+    print(f"\n{counter_even} desses números são pares")
     print(f"{counter_odd} desses números são impares") 
 
     # tenta executar o código se der um erro retona uma msg

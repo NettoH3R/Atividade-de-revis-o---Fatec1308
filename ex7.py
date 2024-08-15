@@ -19,7 +19,7 @@ def count_even_or_odd():
 
     # Conforme os numeros vão sendo digitados eles serão adicionados em uma lista
     while counter_allNubers <= 10:
-        num = float(input(f'Digite o {counter_allNubers}º número: '))
+        num = float(input(f"Digite o {counter_allNubers}º número: "))
         
         if num == 0:
             break
